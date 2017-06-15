@@ -1,0 +1,45 @@
+.portfolio__sample{
+  margin-bottom: 20px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+
+
+@media @tablet-width{
+  .portfolio{
+    padding-bottom: 103px;
+    padding-bottom: 106px;
+  }
+
+  .portfolio__sample{
+    margin-bottom: 41px;
+  }
+}
+
+
+
+@media @desktop-width{
+  .portfolio{
+    padding-bottom: 47px; 
+  }
+
+  .portfolio__samples{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .portfolio__sample{
+    &:first-of-type(1){
+      width: 100%;
+    }
+    &:nth-of-type(1n+2){
+      width: 294px;
+    }
+    &:last-of-type{
+      margin-bottom: 41px;
+    }
+  }
+}

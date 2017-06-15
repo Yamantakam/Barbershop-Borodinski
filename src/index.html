@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Yamantakam, HTML Academy, Barbershop-Borodinski,
+  Borodinski, Барбершоп Бородинский, мужская стрижка, быстро, круто, дорого,
+  стрижка-минутка, мастера, профессионалы">
+  <meta name="description" content="Мы делаем свою работу быстро! Два часа пролетят
+  незаметно и Вы &ndash; счастливый обладатель стильной стрижки-минутки.">
+  <meta name="author" content="https://github.com/Yamantakam">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbershop-Borodinski</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+
+
+
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">
+      Барбершоп &laquo;Бородинский&raquo; &ndash; истинно мужская классика!
+    </h1>
+    <div class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-dest.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tab.svg">
+        <img src="img/logo-mob.svg" width="226" height="85" alt="Barbershop-Borodinski">
+      </picture>
+    </div>
+
+
+    <nav class="nav  nav--closed  nav--nojs">
+      <button class="nav__toggle  btn" type="button">Меню</button>
+      <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item  nav__item--active"><a>Главная</a></li>
+          <li class="nav__item"><a href="portfolio.html">Наши работы</a></li>
+          <li class="nav__item"><a href="form.html">Записаться</a></li>
+          <li class="nav__item"><a href="#contacts">Контакты</a></li>
+          <li class="nav__item"><a href="https://github.com/Yamantakam" target="_blank">Yamantakam</a></li>
+          <li class="nav__item"><a href="https://htmlacademy.ru" target="_blank">HTML Academy</a></li>
+        </ul>
+
+        <ul class="nav__user">
+          <li class="nav__user-item"><a class="nav__user-link" href="login.html">Вход</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+  <main class="page-main">
+    <section class="statistics">
+      <header class="statistics__intro">
+        <h2 class="statistics__title">Стрижка у нас <br> это выгодно!</h2>
+        <p class="statistics__descr">
+          Мужская стрижка требует точного подхода. Обратимся к статистике:
+        </p>
+        <small class="statistics__note  statistics__note--top">
+          <sup>* &ndash; приведённые данные ложь</sup>
+        </small>
+      </header>
+
+
+      <table class="statistics__items">
+        <tr class="statistics__item">
+          <td class="statistics__value">1 500<sup>*</sup></td>
+          <td class="statistics__field">рублей<br> вложений</td>
+        </tr>
+
+        <tr class="statistics__item">
+          <td class="statistics__value">7 200</td>
+          <td class="statistics__field">секунд<br> времени мастера</td>
+        </tr>
+
+        <tr class="statistics__item">
+          <td class="statistics__value">90 000</td>
+          <td class="statistics__field">постриженных<br> волос</td>
+        </tr>
+
+        <tr class="statistics__item">
+          <td class="statistics__value">500 000<sup>*</sup></td>
+          <td class="statistics__field">лайков и<br> комплиментов</td>
+        </tr>
+      </table>
+      <small class="statistics__note  statistics__note--bottom">
+        <sup>* &ndash; приведённые данные ложь</sup>
+      </small>
+    </section>
+
+
+
+    <section class="advantages">
+      <div class="advantages__wrapper  slider">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="slider__switch" type="radio" name="advantages" id="advantage-switch-1" checked>
+        <input class="slider__switch" type="radio" name="advantages" id="advantage-switch-2">
+        <input class="slider__switch" type="radio" name="advantages" id="advantage-switch-3">
+        <div class="advantages__toggles  slider__toggles">
+          <label class="slider__toggle" for="advantage-switch-1"></label>
+          <label class="slider__toggle" for="advantage-switch-2"></label>
+          <label class="slider__toggle" for="advantage-switch-3"></label>
+        </div>
+
+
+        <div class="advantages__items  slider__items">
+          <section class="advantages__item  advantages__item--fast  slider__item">
+            <h3 class="advantages__item-title">Быстро</h3>
+            <p class="advantages__item-descr">
+              Мы делаем свою работу быстро! Два часа пролетят незаметно<br> и Вы &ndash;
+              счастливый обладатель стильной стрижки-минутки.
+            </p>
+          </section>
+
+          <section class="advantages__item  advantages__item--cool  slider__item">
+            <h3 class="advantages__item-title">Круто</h3>
+            <p class="advantages__item-descr">
+              Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола
+              или кино. Во всяком случае внешне.
+            </p>
+          </section>
+
+          <section class="advantages__item  advantages__item--expensive  slider__item">
+            <h3 class="advantages__item-title">Дорого</h3>
+            <p class="advantages__item-descr">
+              Наши мастера &ndash; профессионалы своего дела и не могут стоить дёшево.
+              К тому же, разве цена не даёт определённый статус?
+            </p>
+          </section>
+        </div>
+      </div>
+      <svg class="advantages__triangle" version="1.1" xml:space="preserve" viewBox="0 0 100 160"
+      preserveAspectRatio="none" width="100%" height="34">
+        <polygon points="0,0 50.1,160 50.1,220 0,220 0,160"></polygon>
+        <polygon points="49.9,160 100,0 100,160 100,220 49.9,220"></polygon>
+      </svg>
+    </section>
+
+
+
+    <section class="news">
+      <div class="news__wrapper">
+        <h2 class="news__title">Новости и акции</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <p class="news__item-descr">
+              <a class="news__item-link" href="#">
+                Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик
+                во время стрижки.
+                <time class="news__item-date" datetime="2016-09-29">
+                  <span>29</span> сент
+                </time>
+              </a>
+            </p>
+          </li>
+
+          <li class="news__item">
+            <p class="news__item-descr">
+              <a class="news__item-link" href="#">
+                В нашей команде пополнение, Борис &laquo;Бритва&raquo; Стригунец,
+                пополнил наши стройные ряды. Спешите записаться!
+                <time class="news__item-date" datetime="2016-09-19">
+                  <span>19</span> сент
+                </time>
+              </a>
+            </p>
+          </li>
+
+          <li class="news__item">
+            <p class="news__item-descr">
+              <a class="news__item-link" href="#">
+                Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь
+                и узнаете, в чем здесь подвох!
+                <time class="news__item-date" datetime="2016-09-09">
+                  <span>9</span> сент
+                </time>
+              </a>
+            </p>
+          </li>
+        </ul>
+        <a class="news__btn  btn  btn--primary" href="#">Показать все</a>
+      </div>
+    </section>
+
+
+
+    <section class="reviews">
+      <div class="reviews__wrapper  slider">
+        <h2 class="reviews__title">Отзывы о нас</h2>
+        <input class="slider__switch" type="radio" name="reviews" id="review-switch-1" checked>
+        <input class="slider__switch" type="radio" name="reviews" id="review-switch-2">
+        <input class="slider__switch" type="radio" name="reviews" id="review-switch-3">
+        <div class="reviews__toggles  slider__toggles">
+          <label class="slider__toggle" for="review-switch-1"></label>
+          <label class="slider__toggle" for="review-switch-2"></label>
+          <label class="slider__toggle" for="review-switch-3"></label>
+        </div>
+
+
+        <div class="reviews__items  slider__items">
+          <blockquote class="reviews__item  slider__item">
+            <figure class="reviews__item-photo">
+              <img src="img/author-1.jpg" width="249" height="160" alt="Трэвис Баркер">
+            </figure>
+            <div class="reviews__item-content">
+              <cite class="reviews__item-author">Трэвис Баркер</cite>
+              <p class="reviews__item-descr">
+                Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы
+                было видно новую татуировку!
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="reviews__item  slider__item">
+            <figure class="reviews__item-photo">
+              <img src="img/author-2.jpg" width="249" height="160" alt="Эдвард Руки-ножницы">
+            </figure>
+            <div class="reviews__item-content">
+              <cite class="reviews__item-author">Эдвард Руки-ножницы</cite>
+              <p class="reviews__item-descr">
+                Только взгляните, что со мной сделали мастера из Бородинского! Я
+                выгляжу лучше, чем когда либо!
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="reviews__item  slider__item">
+            <figure class="reviews__item-photo">
+              <img src="img/author-3.jpg" width="249" height="160" alt="Оливер Маккарти">
+            </figure>
+            <div class="reviews__item-content">
+              <cite class="reviews__item-author">Оливер Маккарти</cite>
+              <p class="reviews__item-descr">
+                Большое спасибо Бородинскому за новую прическу, с которой я выгляжу
+                как настоящая кинозвезда.
+              </p>
+            </div>
+          </blockquote>
+        </div>
+        <a class="reviews__btn  btn  btn--primary" href="review.html">Оставить свой</a>
+      </div>
+      <svg class="reviews__triangle" version="1.1" xml:space="preserve" viewBox="0 0 100 160"
+      preserveAspectRatio="none" width="100%" height="34">
+        <polygon points="0,0 50.1,160 50.1,220 0,220 0,160"></polygon>
+        <polygon points="49.9,160 100,0 100,160 100,220 49.9,220"></polygon>
+      </svg>
+    </section>
+  </main>
+
+
+
+
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts" id="contacts">
+        <h4 class="page-footer__title">Барбершоп Бородинский</h4>
+        <p class="page-footer__address">
+          г. Санкт-Петербург, ул. Большая<br> Конюшенная 19/8
+        </p>
+        <a class="page-footer__tel  page-footer__btn" href="tel:+78125556666">
+          <span class="page-footer__hidden">Тел:</span> +7 (812) 555-66-66
+        </a>
+      </div>
+
+
+      <div class="page-footer__social  social">
+        <p class="page-footer__promo">Давайте дружить!</p>
+        <a class="social__btn  social__btn--vk  page-footer__btn  btn" href="#">Vkontakte</a>
+        <a class="social__btn  social__btn--fb  page-footer__btn  btn" href="#">Facebook</a>
+        <a class="social__btn  social__btn--inst  page-footer__btn  btn" href="#">Instagram</a>
+      </div>
+
+
+      <div class="page-footer__copyright">
+        <p class="page-footer__author">
+          Разработано:
+          <a class="page-footer__author-btn  page-footer__btn  btn" href="https://github.com/Yamantakam" target="_blank">
+            Yamantakam
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <div class="popup">
+    <h5 class="popup__title">Личный кабинет</h5>
+    <p class="popup__descr">Введите свой логин и пароль, чтобы войти</p>
+    <form class="popup__form  login-form" action="#" method="post">
+      <input class="popup__login  login-form__text" type="text" name="name" placeholder="Логин">
+      <input class="popup__password  login-form__text" type="password" name="pass" placeholder="Пароль">
+      <input class="popup__checkbox  login-form__checkbox" type="checkbox" name="remember" id="check">
+      <label class="popup__label  login-form__label" for="check">Запомните меня</label>
+      <a class="popup__link  login-form__link" href="#">Я забыл пароль!</a>
+      <button class="popup__btn  login-form__btn  login-form__btn--submit  btn" type="submit">Войти</button>
+      <button class="popup__btn  login-form__btn  login-form__btn--close  btn" type="button">Закрыть</button>
+    </form>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

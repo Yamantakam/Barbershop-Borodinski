@@ -1,0 +1,384 @@
+@orderCol: #d5c9bd;
+@orderCol-2: #999999;
+
+
+
+.order__group{
+  margin-bottom: 30px;
+   :last-child{
+    margin-bottom: 0;
+  }
+}
+
+.order__subgroup{
+  margin-bottom: 32px;
+  font-size: 0;
+}
+
+.order__title{
+  .font(shortest; 20px; 27px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.order__text,
+.order__message{
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 8px 18px 10px;
+  border: 1px solid @altBack-5;
+  background: @tertiaryBack;
+  color: @secondaryColor;
+  .font(full; 18px; 30px; @primaryFF; 400);
+  outline: none;
+  transition: border-color 0.3s;
+  &::placeholder{
+    color: @secondaryColor;
+    .font(full; 18px; 30px; @primaryFF; 400);
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  &:focus::placeholder{
+    opacity: 0;
+  }
+  &:hover{
+    border-color: @orderCol;
+  }
+  &:focus{
+    border-color: @orderCol-2;
+  }
+}
+
+.order__message{
+  min-height: 112px;
+  resize: none;
+}
+
+.order__radio,
+.order__checkbox{
+  display: none;
+}
+
+.order__label{
+  position: relative;
+  margin: 0px 7px 30px 7px;
+  cursor: pointer;
+  &::before,
+  &::after{
+    .def-pseudo();
+    box-shadow: 0 0 0 1px @altBack-5;
+    transition: box-shadow 0.3s;
+  }
+  &::before{
+    background: @tertiaryBack;
+  }
+  &::after{
+    display: none;
+  }
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  &:hover{
+    &::before,
+    &::after{
+      box-shadow: 0 0 0 1px @orderCol;
+    }
+  }
+  &:active{
+    &::before{
+      background: @orderCol;
+    }
+    &::after{
+      background: @tertiaryBack;
+      box-shadow: none;
+    }
+  }
+}
+
+.order__name{
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.order .icon-svg{
+  fill: @altBack-2;
+}
+
+.order .icon--{
+  &admiral{
+    width: 52px;
+    height: 49px;
+  }
+  &lumberjack{
+    width: 58px;
+    height: 68px;
+  }
+  &polarexplorer{
+    width: 64px;
+    height: 78px;
+  }
+  &boyar{
+    width: 58px;
+    height: 98px;
+  }
+  &sage{
+    width: 46px;
+    height: 105px;
+  }
+}
+
+.order__group--model,
+.order__group--addit{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .order__title{
+    width: 100%;
+    margin-bottom: 36px;
+  }
+}
+
+.order__group--model{
+  margin-bottom: 21px;
+  .order__label{
+    padding-top: 62px;
+    .font(shortest; 18px; 24px);
+    &::before,
+    &::after{
+      left: 50%;
+      border-radius: 50%;
+    }
+    &::before{
+      top: 0;
+      width: 52px;
+      height: 52px;
+      margin-left: -26px;
+    }
+    &::after{
+      top: 20px;
+      width: 15px;
+      height: 15px;
+      margin-left: -7px;
+    }
+  }
+}
+
+.order__group--addit{
+  margin-bottom: 24px;
+  .order__title{
+    margin-bottom: 37px;
+  }
+  .order__label{
+    width: 30%;
+    min-width: 180px;
+    margin: 0px 10px 26px 10px;
+    padding-left: 50px;
+    .font(shortest; 18px; 30px);
+    &::before{
+      top: -2px;
+      left: 0;
+      width: 36px;
+      height: 36px;
+    }
+    &::after{
+      top: 5px;
+      left: 14px;
+      width: 10px;
+      height: 20px;
+      border: 2px solid @altBack;
+      border-top: none;
+      border-left: none;
+      box-shadow: none;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.order__radio:checked + .order__label,
+.order__checkbox:checked + .order__label{
+  &::after{
+    display: block;
+    background: @tertiaryBack;
+  }
+}
+
+.order__radio:checked + .order__label{
+  &::after{
+    background: transparent;
+  }
+}
+
+.order__checkbox:checked + .order__label{
+  &::after{
+    background: transparent;
+  }
+}
+
+.order__checkbox:checked + .order__label{
+  &:active::after{
+    display: none;
+  }
+}
+
+.order__btn{
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 13px 10px;
+  background: @altBack-2;
+  color: @primaryColor;
+  .font(full; 18px; 24px; @primaryFF; 700);
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
+  &:hover{
+    background: @altBack-3;
+  }
+  &:active{
+    color: @altColorAlpha;
+  }
+}
+
+
+
+@media @tablet-width{
+  .order__group{
+    margin-bottom: 40px;
+  }
+
+  .order__subgroup{
+    margin-bottom: 35px;
+  }
+
+  .order__subgroup:first-of-type{
+    .order__text{
+      width: 33.33%;
+      margin-bottom: 0;
+    }
+  }
+
+  .order__text,
+  .order__message{
+    margin-bottom: 35px;
+    padding: 19px 30px 19px;
+    .font(shortest; 24px; 30px);
+    &::placeholder{
+      .font(shortest; 24px; 30px);
+    }
+  }
+
+  .order__message{
+    min-height: 211px;
+  }
+
+  .order__title{
+    position: relative;
+    .font(shortest; 30px; 30px);
+    text-transform: uppercase;
+    &::before,
+    &::after{
+      .def-pseudo();
+      top: 50%;
+      z-index: 1;
+      width: 22.5%;
+      height: 1px;
+      margin-top: -1px;
+      background: @orderCol;
+    }
+    &::before{
+      left: 0;
+    }
+    &::after{
+      right: 0;
+    }
+  }
+
+  .order__group--model{
+    margin-bottom: 33px;
+    .order__title{
+      margin-bottom: 45px;
+    }
+
+    .order__label{
+      padding-top: 79px;
+      text-align: center;
+    }
+
+    .order__name{
+      margin-bottom: 32px;
+      .font(shortest; 24px; 24px);
+    }
+  }
+
+  .order__group--addit{
+    margin-bottom: 9px;
+    .order__title{
+      margin-bottom: 72px;
+    }
+
+    .order__label{
+      width: 33.33%;
+      margin: 0 0 53px;
+      padding-left: 60px;
+      .font(shortest; 24px; 30px);
+    }
+  }
+
+  .order__btn{
+    min-height: 70px;
+    margin-bottom: 8px;
+    .font(shortest; 24px; 30px);
+  }
+}
+
+
+
+@media @desktop-width{
+  .order__group{
+    margin-bottom: 56px;
+  }
+
+  .order__subgroup:first-of-type{
+    .order__text{
+      width: 295px;
+      margin-right: 37px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+  }
+
+  .order__subgroup:nth-of-type(2){
+    margin-bottom: 0;
+  }
+
+  .order__text{
+    width: 462px;
+    margin-right: 35px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+
+  .order__group--model{
+    margin-bottom: 32px;
+    .order__title{
+      margin-bottom: 52px;
+    }
+  }
+
+  .order__group--addit{
+    margin-bottom: 30px;
+  }
+
+  .order__btn{
+    margin-bottom: 19px;
+  }
+
+  .order__title{
+    &::before,
+    &::after{
+      width: 280px;
+    }
+  }
+}

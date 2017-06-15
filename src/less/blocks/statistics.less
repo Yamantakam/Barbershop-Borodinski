@@ -1,0 +1,259 @@
+@statsColor: #404040;
+@statsColor-2: #4e4e4e;
+@statsColor-3: #353535;
+
+
+
+.statistics{
+  .container();
+}
+
+.statistics__intro{
+  padding: 27px 38px 26px 38px;
+  background: @tertiaryBack;
+  color: @secondaryColor;
+  text-align: center;
+}
+
+.statistics__title{
+  margin-bottom: 16px;
+  .font(short; 30px; 30px; 700);
+  text-transform: uppercase;
+}
+
+.statistics__descr{
+  .font(shortest; 20px; 27px);
+}
+
+.statistics__note{
+  display: block;
+  .font(shortest; 20px; 27px);
+  &--bottom{
+    padding: 14px 0 14px 0;
+    color: @altColorAlpha;
+    text-align: center;
+  }
+  &--top{
+    display: none;
+  }
+}
+
+.statistics__note sup{
+  font-size: 90%;
+}
+
+.statistics__items{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.statistics__item{
+  background: @statsColor;
+  &:nth-child(2){
+    background: @statsColor-2;
+  }
+  &:nth-child(3){
+    background: @statsColor-3;
+    .statistics__value,
+    .statistics__field{
+      padding-bottom: 21px;
+    }
+  }
+  &:nth-child(4){
+    background: @statsColor;
+    .statistics__value,
+    .statistics__field{
+      padding-bottom: 21px;
+    }
+  }
+}
+
+.statistics__value,
+.statistics__field{
+  width: 50%;
+  padding: 20px;
+  padding-bottom: 18px;
+  vertical-align: top;
+}
+
+.statistics__value{
+  padding-right: 0;
+  color: @primaryColor;
+  .font(short; 40px; 40px; 700);
+}
+
+.statistics__value sup{
+  top: -.50em;
+  left: .15em;
+  margin-left: 5px;
+  font-size: 60%;
+}
+
+.statistics__field{
+  padding-left: 0;
+  color: @tertiaryColor;
+  .font(shortest; 18px; 18px);
+  text-align: right;
+}
+
+
+
+@media @tablet-width{
+  .statistics{
+    position: relative;
+    z-index: 1;
+    margin-top: -184px;
+  }
+
+  .statistics__intro{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 184px;
+    padding: 30px 0 24px;
+    &::before{
+      .def-pseudo();
+      top: 26px;
+      left: -15px;
+      border: 16px solid transparent;
+      border-bottom-color: @tertiaryBack;
+      transform: rotate(45deg);
+    }
+  }
+
+  .statistics__title{
+    width: 50%;
+    padding-left: 40px;
+    margin-bottom: 18px;
+    .font(shortest; 40px; 40px);
+    text-align: left;
+    text-transform: none;
+  }
+
+  .statistics__descr{
+    width: 37.5%;
+    padding: 5px 4px 0 4px;
+    text-align: left;
+  }
+
+  .statistics__items{
+    display: block;
+  }
+
+  .statistics__items tbody{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .statistics__item{
+    display: block;
+    width: 50%;
+    padding: 25px 35px;
+    padding-bottom: 28px;
+    &:nth-child(2){
+      padding-left: 27px;
+      .statistics__value,
+      .statistics__field{
+        padding-bottom: 0;
+      }
+    }
+    &:nth-child(3){
+      .statistics__value,
+      .statistics__field{
+        padding-bottom: 0;
+      }
+    }
+    &:nth-child(4){
+      padding-left: 32px;
+      .statistics__value,
+      .statistics__field{
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .statistics__value,
+  .statistics__field{
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+
+  .statistics__value{
+    margin-bottom: 7px;
+    .font(shortest; 72px; 72px);
+  }
+
+  .statistics__field{
+    padding-left: 2px;
+    .font(shortest; 20px; 27px);
+    text-align: left;
+  }
+
+  .statistics__field br{
+    display: none;
+  }
+
+  .statistics__note--top{
+    display: block;
+    width: 50%;
+    padding-left: 40px;
+    color: @altColorAlpha-2;
+    text-align: left;
+  }
+
+  .statistics__note--bottom{
+    display: none;
+  }
+}
+
+
+
+@media @desktop-width{
+  .statistics{
+    display: flex;
+    margin-top: -159px;
+  }
+
+  .statistics__intro{
+    flex-direction: column;
+    flex-grow: 1;
+    width: 320px;
+    min-height: 318px;
+    padding-left: 40px;
+    padding-right: 45px;
+    padding-bottom: 0;
+    &::before{
+      top: 21px;
+      left: -16px;
+    }
+  }
+
+  .statistics__title{
+    width: auto;
+    margin-bottom: 43px;
+    padding-left: 0;
+  }
+
+  .statistics__descr{
+    width: auto;
+    margin-bottom: 28px;
+    padding: 0;
+    padding-left: 3px;
+  }
+
+  .statistics__items{
+    display: flex;
+    width: 640px;
+  }
+
+  .statistics__item{
+    min-height: 159px;
+  }
+
+  .statistics__note--top{
+    width: auto;
+    padding-left: 0;
+  }
+}

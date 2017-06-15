@@ -1,0 +1,149 @@
+@login-formCol: #d5c9bd;
+@login-formCol-2: #999999;
+
+
+
+.login-form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.login-form__text{
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 8px 18px 10px;
+  border: 1px solid @altBack-5;
+  background: @tertiaryBack;
+  color: @secondaryColor;
+  .font(full; 18px; 30px; @primaryFF; 400);
+  outline: none;
+  transition: border-color 0.3s;
+  &:nth-of-type(2){
+    margin-bottom: 28px;
+  }
+  &::placeholder{
+    color: @secondaryColor;
+    .font(full; 18px; 30px; @primaryFF; 400);
+    transition: opacity 0.3s;
+  }
+  &:focus::placeholder{
+    opacity: 0;
+  }
+  &:hover{
+    border-color: @login-formCol;
+  }
+  &:focus{
+    border-color: @login-formCol-2;
+  }
+}
+
+.login-form__checkbox{
+  display: none;
+}
+
+.login-form__label{
+  position: relative;
+  width: 50%;
+  margin-bottom: 29px;
+  padding-left: 48px;
+  cursor: pointer;
+  &::before,
+  &::after{
+    .def-pseudo();
+  }
+  &::before{
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    background: @tertiaryBack;
+    box-shadow: 0 0 0 1px @altBack-5;
+    transition: box-shadow 0.3s;
+  }
+  &::after{
+    display: none;
+    top: 5px;
+    left: 14px;
+    width: 10px;
+    height: 20px;
+    border: 2px solid @altBack;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+  }
+  &:hover{
+    &::before{
+      box-shadow: 0 0 0 1px @login-formCol;
+    }
+  }
+  &:active{
+    &::before{
+      background: @login-formCol;
+    }
+    &::after{
+      background: @tertiaryBack;
+    }
+  }
+}
+
+.login-form__checkbox:checked + .login-form__label{
+  &::after{
+    display: block;
+    background: transparent;
+  }
+}
+
+.login-form__checkbox:checked + .login-form__label{
+  &:active::after{
+    display: none;
+  }
+}
+
+.login-form__link{
+  width: 50%;
+  text-align: right;
+  text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.login-form__btn{
+  display: block;
+  width: 45%;
+  margin-bottom: 5px;
+  padding: 13px 10px;
+  .font(full; 18px; 24px; @primaryFF; 700);
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  &--submit{
+    background: @altBack-2;
+    color: @primaryColor;
+    &:hover{
+      background: @altBack-3;
+    }
+    &:active{
+      background: @altBack-4;
+      color: @altColorAlpha;
+    }
+  }
+  &--close{
+    border: 1px solid #e5ddd5;
+    background: transparent;
+    color: @secondaryColor;
+    &:hover{
+      border-color: #d5c9bd;
+    }
+    &:active{
+      background: #d5c9bd;
+      color: @altColorAlpha-2;
+    }
+  }
+}
+
+.login-form--login .login-form__btn{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}

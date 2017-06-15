@@ -1,0 +1,20 @@
+.btn{
+  cursor: pointer;
+}
+
+.btn--primary{
+  padding: 12px 10px;
+  border: 1px solid @altColor-3;
+  text-align: center;
+  color: @secondaryColor;
+  .font(short; 18px; 24px; 700);
+  text-transform: uppercase;
+  transition: 0.3s linear;
+  &:hover{
+    border-color: #d5c9bd;
+  }
+  &:active{
+    background: #d5c9bd;
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,62 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
+
+body{
+  min-width: 320px;
+  background: @primaryBack;
+  color: @primaryColor;
+  .font(full);
+}
+
+
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+sup,
+sub{
+  position: relative;
+  vertical-align: baseline;
+  .font(shortest; 50%; 0);
+}
+
+
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+.icon-svg{
+  max-width: 100%;
+  .def-ib(middle);
+  overflow: hidden;
+}

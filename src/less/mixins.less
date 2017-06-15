@@ -1,0 +1,91 @@
+.font(full; @primaryFS: @primaryFS; @primaryLH: @primaryLH; @primaryFF: @primaryFF; @primaryFW: @primaryFW){
+  font-size: @primaryFS;
+  line-height: @primaryLH;
+  font-family: @primaryFF;
+  font-weight: @primaryFW;
+}
+
+.font(short; @primaryFS: @primaryFS; @primaryLH: @primaryLH; @primaryFW: @primaryFW){
+  font-size: @primaryFS;
+  line-height: @primaryLH;
+  font-weight: @primaryFW;
+}
+
+.font(shortest; @primaryFS: @primaryFS; @primaryLH: @primaryLH){
+  font-size: @primaryFS;
+  line-height: @primaryLH;
+}
+
+
+
+.def-ib(@align: top){
+  display: inline-block;
+  vertical-align: @align;
+}
+
+.def-list(){
+  font-size: 0;
+  li{
+    .def-ib();
+    font-size: @primaryFS;
+  }
+}
+
+.def-pseudo(@content: ""; @position: absolute; @display: block){
+  content: @content;
+  position: @position;
+  display: @display;
+}
+
+
+
+.align(all; @top: 50%; @left: 50%; @translate: translate(-50%, -50%)){
+  top: @top;
+  left: @left;
+  transform: @translate;
+}
+
+.align(horizont; @left: 50%; @translateX: translateX(-50%)){
+  left: @left;
+  transform: @translateX;
+}
+
+.align(vertical; @top: 50%; @translateY: translateY(-50%)){
+  top: @top;
+  transform: @translateY;
+}
+
+
+
+.container(){
+  width: auto;
+  @media @tablet-width{
+    width: 83%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.clearfix(){
+  &::after{
+    .def-pseudo(@content: ""; static; table);
+    clear: both;
+  }
+}
+
+
+
+.triangle(@bottom: 0; @width: 100%; @height: 40px; @fill: @secondaryBack){
+  position: absolute;
+  bottom: @bottom;
+  width: @width;
+  height: @height;
+  fill: @fill;
+}
+
+
+
+.icons(@pos){
+  background-image: url("../img/sprite.png");
+  background-position: @pos;
+}

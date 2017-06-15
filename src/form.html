@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Yamantakam, HTML Academy, Barbershop-Borodinski,
+  Borodinski, Барбершоп Бородинский, стрижка, запись на стрижку, модель бороды,
+  адмирал, лесоруб, полярник, боярин, мудрец, подкрасить бороду, накрутить усы,
+  причесать бороду, подровнять виски, убрать седину, отполировать лысину">
+  <meta name="description" content="Забудьте, как вы стриглись раньше. Мы сделаем
+  из вас звезду футбола или кино. Во всяком случае внешне.">
+  <meta name="author" content="https://github.com/Yamantakam">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbershop-Borodinski</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+
+
+
+<body>
+  <header class="page-header">
+    <div class="page-header__logo  page-header__logo--inner">
+      <a class="page-header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-dest.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tab.svg">
+          <img src="img/logo-mob.svg" width="226" height="85" alt="Barbershop-Borodinski">
+        </picture>
+      </a>
+      <svg class="logo__triangle" version="1.1" xml:space="preserve" viewBox="0 0 100 160"
+      preserveAspectRatio="none" width="100%" height="34">
+        <polygon points="0,0 50.1,160 50.1,220 0,220 0,160"></polygon>
+        <polygon points="49.9,160 100,0 100,160 100,220 49.9,220"></polygon>
+      </svg>
+    </div>
+
+
+    <nav class="nav  nav--closed  nav--nojs">
+      <button class="nav__toggle  btn" type="button">Меню</button>
+      <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html">Главная</a></li>
+          <li class="nav__item"><a href="portfolio.html">Наши работы</a></li>
+          <li class="nav__item  nav__item--active"><a>Записаться</a></li>
+          <li class="nav__item"><a href="#contacts">Контакты</a></li>
+          <li class="nav__item"><a href="https://github.com/Yamantakam" target="_blank">Yamantakam</a></li>
+          <li class="nav__item"><a href="https://htmlacademy.ru" target="_blank">HTML Academy</a></li>
+        </ul>
+
+        <ul class="nav__user">
+          <li class="nav__user-item"><a class="nav__user-link" href="login.html">Вход</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+  <main class="page-main">
+    <section class="inner-content  inner-content--form">
+      <div class="inner-content__wrapper">
+        <header class="inner-content__header">
+          <h1 class="inner-content__title">Запись на стрижку</h1>
+          <a class="inner-content__btn  btn  btn--primary" href="index.html">На главную</a>
+        </header>
+
+
+        <form class="order" action="#" method="post">
+          <div class="order__group">
+            <div class="order__subgroup">
+              <input class="order__text" type="text" name="name" placeholder="Имя">
+              <input class="order__text" type="text" name="lastname" placeholder="Фамилия">
+              <input class="order__text" type="text" name="middlename" placeholder="Отчество">
+            </div>
+            <div class="order__subgroup">
+              <input class="order__text" type="tel" name="tel" placeholder="Контактный телефон">
+              <input class="order__text" type="email" name="email" placeholder="Контактный e-mail">
+            </div>
+            <div class="order__subgroup">
+              <textarea class="order__message" name="message" placeholder="Доп. информация для мастера"></textarea>
+            </div>
+          </div>
+
+          <div class="order__group  order__group--model">
+            <h2 class="order__title">Выберите модель бороды:</h2>
+            <input class="order__radio" type="radio" name="beard" id="admiral" checked>
+            <label class="order__label" for="admiral">
+              <span class="order__name">адмирал</span>
+              <svg class="icon-svg  icon--admiral">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#beard-icon"></use>
+              </svg>
+            </label>
+            <input class="order__radio" type="radio" name="beard" id="lumberjack">
+            <label class="order__label" for="lumberjack">
+              <span class="order__name">лесоруб</span>
+              <svg class="icon-svg  icon--lumberjack">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#beard-icon-2"></use>
+              </svg>
+            </label>
+            <input class="order__radio" type="radio" name="beard" id="polarexplorer">
+            <label class="order__label" for="polarexplorer">
+              <span class="order__name">полярник</span>
+              <svg class="icon-svg  icon--polarexplorer">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#beard-icon-3"></use>
+              </svg>
+            </label>
+            <input class="order__radio" type="radio" name="beard" id="boyar">
+            <label class="order__label" for="boyar">
+              <span class="order__name">боярин</span>
+              <svg class="icon-svg  icon--boyar">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#beard-icon-4"></use>
+              </svg>
+            </label>
+            <input class="order__radio" type="radio" name="beard" id="sage">
+            <label class="order__label" for="sage">
+              <span class="order__name">мудрец</span>
+              <svg class="icon-svg  icon--sage">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#beard-icon-5"></use>
+              </svg>
+            </label>
+          </div>
+
+          <div class="order__group  order__group--addit">
+            <h2 class="order__title">Дополнительные услуги:</h2>
+            <input class="order__checkbox" type="checkbox" name="paint" id="paint" checked>
+            <label class="order__label" for="paint">Подкрасить бороду</label>
+            <input class="order__checkbox" type="checkbox" name="screw" id="screw" checked>
+            <label class="order__label" for="screw">Накрутить усы</label>
+            <input class="order__checkbox" type="checkbox" name="comb" id="comb">
+            <label class="order__label" for="comb">Причесать бороду</label>
+            <input class="order__checkbox" type="checkbox" name="align" id="align">
+            <label class="order__label" for="align">Подровнять виски</label>
+            <input class="order__checkbox" type="checkbox" name="tidy" id="tidy">
+            <label class="order__label" for="tidy">Убрать седину</label>
+            <input class="order__checkbox" type="checkbox" name="polish" id="polish">
+            <label class="order__label" for="polish">Отполировать лысину</label>
+          </div>
+          <button class="order__btn  btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+      <svg class="inner-content__triangle" version="1.1" xml:space="preserve" viewBox="0 0 100 160"
+      preserveAspectRatio="none" width="100%" height="34">
+        <polygon points="0,0 50.1,160 50.1,220 0,220 0,160"></polygon>
+        <polygon points="49.9,160 100,0 100,160 100,220 49.9,220"></polygon>
+      </svg>
+    </section>
+  </main>
+
+
+
+
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts" id="contacts">
+        <h4 class="page-footer__title">Барбершоп Бородинский</h4>
+        <p class="page-footer__address">
+          г. Санкт-Петербург, ул. Большая<br> Конюшенная 19/8
+        </p>
+        <a class="page-footer__tel  page-footer__btn" href="tel:+78125556666">
+          <span class="page-footer__hidden">Тел:</span> +7 (812) 555-66-66
+        </a>
+      </div>
+
+
+      <div class="page-footer__social  social">
+        <p class="page-footer__promo">Давайте дружить!</p>
+        <a class="social__btn  social__btn--vk  page-footer__btn  btn" href="#">Vkontakte</a>
+        <a class="social__btn  social__btn--fb  page-footer__btn  btn" href="#">Facebook</a>
+        <a class="social__btn  social__btn--inst  page-footer__btn  btn" href="#">Instagram</a>
+      </div>
+
+
+      <div class="page-footer__copyright">
+        <p class="page-footer__author">
+          Разработано:
+          <a class="page-footer__author-btn  page-footer__btn  btn" href="https://github.com/Yamantakam" target="_blank">
+            Yamantakam
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <div class="popup">
+    <h5 class="popup__title">Личный кабинет</h5>
+    <p class="popup__descr">Введите свой логин и пароль, чтобы войти</p>
+    <form class="popup__form  login-form" action="#" method="post">
+      <input class="popup__login  login-form__text" type="text" name="name" placeholder="Логин">
+      <input class="popup__password  login-form__text" type="password" name="pass" placeholder="Пароль">
+      <input class="popup__checkbox  login-form__checkbox" type="checkbox" name="remember" id="check">
+      <label class="popup__label  login-form__label" for="check">Запомните меня</label>
+      <a class="popup__link  login-form__link" href="#">Я забыл пароль!</a>
+      <button class="popup__btn  login-form__btn  login-form__btn--submit  btn" type="submit">Войти</button>
+      <button class="popup__btn  login-form__btn  login-form__btn--close  btn" type="button">Закрыть</button>
+    </form>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

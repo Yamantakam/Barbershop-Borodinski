@@ -1,0 +1,13 @@
+node_modules/
+build/
+template/*.psd
+.publish/
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.sublime*
+Thumbs.db
+src/img/sprite.png
+src/less/sprite.less
